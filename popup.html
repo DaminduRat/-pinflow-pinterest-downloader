@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PinFlow Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-wrapper">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span class="logo-text">Pin<span class="highlight">Flow</span></span>
+      </div>
+      <span class="version-tag">v1.0.0</span>
+    </header>
+
+    <!-- Stats Card -->
+    <div class="glass-card stat-card">
+      <div class="stat-info">
+        <span class="stat-label">Total HD Downloads</span>
+        <h1 class="stat-value" id="download-counter">0</h1>
+      </div>
+      <div class="stat-icon-bg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+          <path d="M12 8v8"/>
+          <path d="M8 12l4 4 4-4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Settings Card -->
+    <div class="glass-card settings-card">
+      <h2 class="section-title">Preferences</h2>
+      
+      <!-- Toggle 1 -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <span class="setting-name">Hover download button</span>
+          <span class="setting-desc">Show download button when hovering on pins</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-enable" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Toggle 2 -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <span class="setting-name">Organize in subfolder</span>
+          <span class="setting-desc">Save images inside a "PinFlow" subfolder</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-subfolder" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Instructions / Guide -->
+    <div class="guide-section">
+      <h3 class="guide-title">How to use</h3>
+      <ul class="guide-list">
+        <li>
+          <span class="step-num">1</span>
+          <span class="step-text">Open <a href="https://pinterest.com" target="_blank" class="link-span">Pinterest.com</a> in your browser.</span>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <span class="step-text">Hover your cursor over any Pin image.</span>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <span class="step-text">Click the floating button in the top-left to download.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Crafted by <span class="author-highlight">DaminduR</span></p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

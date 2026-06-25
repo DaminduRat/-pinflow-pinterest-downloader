@@ -1,0 +1,105 @@
+/* Styling for Pinterest Download Button */
+
+/* Container wrapper to relative positioning */
+.pinflow-card-wrapper {
+  position: relative !important;
+}
+
+/* Floating Download Button */
+.pinflow-download-btn {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  color: #111111 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 9999 !important;
+  opacity: 0 !important;
+  transform: translateX(-8px) scale(0.9) !important;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 0.2s ease, 
+              border-color 0.2s ease,
+              color 0.2s ease,
+              box-shadow 0.2s ease !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  padding: 0 !important;
+  outline: none !important;
+}
+
+/* Hover state for the button itself (turns Pinterest Red) */
+.pinflow-download-btn:hover {
+  background: #e60023 !important; /* Pinterest Red */
+  border-color: #e60023 !important;
+  color: #ffffff !important;
+  transform: translateX(0) scale(1.1) !important;
+  box-shadow: 0 6px 16px rgba(230, 0, 35, 0.35) !important;
+}
+
+/* Active/click state */
+.pinflow-download-btn:active {
+  transform: translateX(0) scale(0.95) !important;
+}
+
+/* Make the button visible when hovering over the card */
+.pinflow-card-wrapper:hover .pinflow-download-btn {
+  opacity: 1 !important;
+  transform: translateX(0) scale(1) !important;
+}
+
+/* SVG Icon styling */
+.pinflow-download-btn svg {
+  width: 18px !important;
+  height: 18px !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+  pointer-events: none !important;
+}
+
+/* Subtle animation on hover */
+.pinflow-download-btn:hover svg {
+  transform: translateY(1px) !important;
+}
+
+/* Loading/Downloading state */
+.pinflow-download-btn.downloading {
+  background: rgba(245, 245, 245, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  color: #111111 !important;
+  cursor: wait !important;
+}
+
+.pinflow-download-btn.downloading svg {
+  animation: pinflow-spin 1s linear infinite !important;
+}
+
+/* Success state */
+.pinflow-download-btn.success {
+  background: #25d366 !important; /* Success Green */
+  border-color: #25d366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3) !important;
+}
+
+/* Spin animation keyframes */
+@keyframes pinflow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Disabled state */
+body.pinflow-disabled .pinflow-download-btn {
+  display: none !important;
+}
