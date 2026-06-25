@@ -42,11 +42,12 @@
 To load PinFlow locally on your browser:
 
 ### Step 1: Download/Clone the Repository
-Clone this repository or download it as a ZIP and extract it to a directory (e.g., `D:\my-ai-gen\pin dw`).
+Clone this repository or download it as a ZIP and extract it to a directory (e.g., `D:\my-ai-gen\pindown`).
 
 ### Step 2: Open Extensions Management
 *   In Google Chrome: Go to URL `chrome://extensions/`
 *   In Microsoft Edge: Go to URL `edge://extensions/`
+*   In Brave: Go to URL `brave://extensions/`
 
 ### Step 3: Enable Developer Mode
 Toggle the **Developer mode** switch in the **top-right corner** of the page to **ON**.
