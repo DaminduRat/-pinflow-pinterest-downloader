@@ -14,17 +14,15 @@
 ### 1. Injected Download Button (Hover State)
 *Hover over any Pin on the Pinterest feed to instantly reveal a clean, white-glass button in the top-left corner. Hovering over the button itself transitions it to a striking Pinterest Red color.*
 
-![Hover Button on Pinterest Feed](assets/screenshot1.png)
+![Hover Button on Pinterest Feed](assets/screenshot2.png)
 
 ### 2. Premium Glassmorphic Dashboard
 *Open the extension menu to access a dark-glass settings panel. Toggle hover controls on/off reactively, choose whether to organize files into a subfolder, and watch the total downloaded item counter animate upward.*
 
-![Glassmorphic Dashboard Control Panel](assets/screenshot2.png)
+![Glassmorphic Dashboard Control Panel](assets/screenshot1.png)
 
 ### 3. Smart Filename & Status Check
 *Files are automatically saved using clean, descriptive filenames derived directly from the Pin's description or nearby tags, replacing spaces with neat underscores.*
-
-![Success Download State and Naming](assets/screenshot3.png)
 
 ---
 
